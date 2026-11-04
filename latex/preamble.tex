@@ -1,0 +1,35 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx,booktabs,array,enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=MidnightBlue,urlcolor=MidnightBlue,
+  pdfauthor={},pdfsubject={Reinforcement learning worked solutions}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlist{nosep,leftmargin=*}
+\setlength{\emergencystretch}{2em}
+\captionsetup{font=small,labelfont=bf}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,
+  columns=fullflexible,keepspaces=true,showstringspaces=false,
+  commentstyle=\color{gray},keywordstyle=\color{MidnightBlue},
+  aboveskip=6pt,belowskip=6pt}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\sg}{\operatorname{stopgrad}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\studytitle}[1]{%
+  \hypersetup{pdftitle={#1 - Worked Solutions}}%
+  {\small\color{MidnightBlue} BASICRL\quad /\quad WORKED SOLUTIONS}\par
+  \vspace{5pt}{\LARGE\bfseries #1}\par\vspace{5pt}}
+\newcommand{\historical}{\textbf{Experiment status.} The following numbers and
+  curves are retained from earlier runs, not from a rerun of the revised
+  reference code. They are examples for interpretation, not performance guarantees.\par}
